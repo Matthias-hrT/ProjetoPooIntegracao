@@ -34,19 +34,19 @@ public class ViewMenuIni extends ControlMenuIni {
 
         Dimension tamanhoBotoes = new Dimension(240, 50);
 
-        JButton grupo1Button = new JButton("Grupo1");
+        JButton grupo1Button = new JButton("Bilheteria de Ônibus");
         grupo1Button.setPreferredSize(tamanhoBotoes);
         grupo1Button.setBackground(new Color(211,211,211));
-        JButton grupo2Button = new JButton("Grupo2");
+        JButton grupo2Button = new JButton("Manutenção de Vias");
         grupo2Button.setPreferredSize(tamanhoBotoes);
         grupo2Button.setBackground(new Color(211,211,211));
-        JButton grupo3Button = new JButton("Grupo3");
+        JButton grupo3Button = new JButton("Sistema de Saneamento");
         grupo3Button.setPreferredSize(tamanhoBotoes);
         grupo3Button.setBackground(new Color(211,211,211));
-        JButton grupo4Button = new JButton("Grupo4");
+        JButton grupo4Button = new JButton("Restaurante");
         grupo4Button.setPreferredSize(tamanhoBotoes);
         grupo4Button.setBackground(new Color(211,211,211));
-        JButton grupo5Button = new JButton("Grupo5");
+        JButton grupo5Button = new JButton("Portal da Transparência");
         grupo5Button.setPreferredSize(tamanhoBotoes);
         grupo5Button.setBackground(new Color(211,211,211));
         JButton tempButton = new JButton("Tempo de Execução");
@@ -95,7 +95,7 @@ public class ViewMenuIni extends ControlMenuIni {
 
         mudarCor.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                if(!escuro){
+                if(!mudarCor(escuro)){
                     escuro = true;
                     frameMenu.getContentPane().setBackground(new Color(40, 40, 40));
                     Color novaCor = new Color(150, 150, 150);
@@ -123,13 +123,13 @@ public class ViewMenuIni extends ControlMenuIni {
 
         mudarIdioma.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                if(!ingles){
+                if(!mudarIdioma(ingles)){
                     ingles = true;
-                    grupo1Button.setText("Group1");
-                    grupo2Button.setText("Group2");
-                    grupo3Button.setText("Group3");
-                    grupo4Button.setText("Group4");
-                    grupo5Button.setText("Group5");
+                    grupo1Button.setText("Bus ticket office");
+                    grupo2Button.setText("Road Maintenance");
+                    grupo3Button.setText("Sanitation System");
+                    grupo4Button.setText("Restaurant");
+                    grupo5Button.setText("Transparency Portal");
                     tempButton.setText("Runtime");
                     registroButton.setText("Access Record");
                     mudarCor.setText("Change Colors");
@@ -137,11 +137,11 @@ public class ViewMenuIni extends ControlMenuIni {
                     sairButton.setText("Exit");
                 } else{
                     ingles = false;
-                    grupo1Button.setText("Grupo1");
-                    grupo2Button.setText("Grupo2");
-                    grupo3Button.setText("Grupo3");
-                    grupo4Button.setText("Grupo4");
-                    grupo5Button.setText("Grupo5");
+                    grupo1Button.setText("Bilheteria de Ônibus");
+                    grupo2Button.setText("Manutenção de Vias");
+                    grupo3Button.setText("Sistema de Saneamento");
+                    grupo4Button.setText("Restaurante");
+                    grupo5Button.setText("Portal da Transparência");
                     tempButton.setText("Tempo de Execução");
                     registroButton.setText("Registro de Acessos");
                     mudarCor.setText("Mudar Cor");

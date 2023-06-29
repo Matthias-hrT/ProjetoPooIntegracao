@@ -3,6 +3,8 @@ package Projeto;
 import CodMaeda.MainMaeda;
 import CodFelipe.MainFelipe;
 import CodPlinio.Principal;
+import CodBruno.RestauranteGUI;
+import CodVitor.PrincipalVitor;
 import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +30,14 @@ public class ControlMenuSec{
                 codGrupo = new MainFelipe();
                 integrantes.addAll(codGrupo.getNomeIntegrantes());
             }
+            case "Grupo4" -> {
+                codGrupo = new RestauranteGUI();
+                integrantes.addAll(codGrupo.getNomeIntegrantes());
+            }
+            case "Grupo5" -> {
+                codGrupo = new PrincipalVitor();
+                integrantes.addAll(codGrupo.getNomeIntegrantes());
+            }
             default -> {
             }
         }
@@ -48,6 +58,14 @@ public class ControlMenuSec{
                 codGrupo = new MainFelipe();
                 JOptionPane.showMessageDialog(null, codGrupo.descricaoProjeto());
             }
+            case "Grupo4" -> {
+                codGrupo = new RestauranteGUI();
+                JOptionPane.showMessageDialog(null, codGrupo.descricaoProjeto());
+            }
+            case "Grupo5" -> {
+                codGrupo = new PrincipalVitor();
+                JOptionPane.showMessageDialog(null, codGrupo.descricaoProjeto());
+            }
             default -> {
             }
         }
@@ -64,6 +82,14 @@ public class ControlMenuSec{
             }
             case "Grupo3" -> {
                 codGrupo = new MainFelipe();
+                JOptionPane.showMessageDialog(null, codGrupo.horaSistema());
+            }
+            case "Grupo4" -> {
+                codGrupo = new RestauranteGUI();
+                JOptionPane.showMessageDialog(null, codGrupo.horaSistema());
+            }
+            case "Grupo5" -> {
+                codGrupo = new PrincipalVitor();
                 JOptionPane.showMessageDialog(null, codGrupo.horaSistema());
             }
             default -> {
@@ -86,6 +112,14 @@ public class ControlMenuSec{
                 codGrupo = new MainFelipe();
                 classes.addAll(codGrupo.getClasses());
             }
+            case "Grupo4" -> {
+                codGrupo = new RestauranteGUI();
+                classes.addAll(codGrupo.getClasses());
+            }
+            case "Grupo5" -> {
+                codGrupo = new PrincipalVitor();
+                classes.addAll(codGrupo.getClasses());
+            }
             default -> {
             }
         }
@@ -105,6 +139,16 @@ public class ControlMenuSec{
             }
             case "Grupo3" -> {
                 codGrupo = new MainFelipe();
+                codGrupo.iniciar();
+                registro.add(grupo);
+            }
+            case "Grupo4" -> {
+                codGrupo = new RestauranteGUI();
+                codGrupo.iniciar();
+                registro.add(grupo);
+            }
+            case "Grupo5" -> {
+                codGrupo = new PrincipalVitor();
                 codGrupo.iniciar();
                 registro.add(grupo);
             }

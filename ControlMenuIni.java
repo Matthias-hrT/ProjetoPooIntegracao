@@ -39,6 +39,12 @@ public class ControlMenuIni{
     public List<String> registroAcesso(){
         return ControlMenuSec.registro;
     }
+    public boolean mudarCor(boolean escuro){
+        return escuro;
+    }
+    public boolean mudarIdioma(boolean ingles){
+        return ingles;
+    }
     public void encerrarPrograma() {
         System.exit(0);
     }
